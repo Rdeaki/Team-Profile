@@ -1,28 +1,24 @@
-const Employee = require("../lib/Employee");
+const Employee = require('../lib/Employee');
+const employee = new Employee('Ricky', '10', 'Ricky@gmail.com');
 
-test("create the employee object", ()=>{
-    const e = new Employee();
-  
-    expect(typeof(e)).toBe("object");
-  });
+test('test for employee info', () => {
+    expect(employee.name).toBe('Ricky');
+    expect(employee.id).toBe('10');
+    expect(employee.email).toBe('Ricky@gmail.com')
+});
 
-  test("sets the name of the constructor", ()=>{
-    const name = 'ricky';
-    const e = new Employee(name);
-  
-    expect(e.name).toBe(name);
-  });
-  
-  test("sets the id of the constructor", ()=>{
-    const valor = 1;
-    const e = new Employee("ricky", valor);
-  
-    expect(e.id).toBe(valor);
-  });
-  
-  test("sets the email of the constructor", ()=>{
-    const valor = "ricky@gmail.com";
-    const e = new Employee("ricky",1, valor);
-  
-    expect(e.email).toBe(valor);
-  }); 
+test('test if we can get name from getName()', () => {
+    expect(employee.getName()).toBe('Ricky');
+});
+
+test('test if we can get ID from getId()', () => {
+    expect(employee.getId()).toBe('10');
+});
+
+test('test if we can get email from getEmail()', () => {
+    expect(employee.getEmail()).toBe('Ricky@gmail.com');
+});
+
+test('test if we can get role from getRole()', () => {
+    expect(employee.getRole()).toBe('Employee');
+});
