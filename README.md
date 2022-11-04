@@ -37,3 +37,11 @@ Enter in the following command into your terminal:
 ```node index.js```
 
 Then asnwer the prompts to have your HTML generated.
+
+## screenshot
+
+![127 0 0 1_5500_dist_index html](https://user-images.githubusercontent.com/106924254/199866676-09c9abbe-a957-45ad-8777-ebc35feb2479.png)
+
+## video
+
+https://youtu.be/vyn7y-ScBVM
