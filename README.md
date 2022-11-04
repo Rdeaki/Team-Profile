@@ -29,3 +29,11 @@ THEN I am prompted to enter the intern’s name, ID, email, and school, and I am
 WHEN I decide to finish building my team
 THEN I exit the application, and the HTML is generated
 ```
+## Usage
+
+To use this application, clone this repository. This app requires NODE.JS to be installed. Using VS Code or the code editor of your choice, install Inquirer.js (8.2.4). In order to install ```inquirer```, enter ```npm i inquirer@8.2.4``` into your command line.
+
+Enter in the following command into your terminal:
+```node index.js```
+
+Then asnwer the prompts to have your HTML generated.
